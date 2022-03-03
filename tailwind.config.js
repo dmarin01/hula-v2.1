@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  images: {
+    domains: ["image.tmdb.org"]
+  },
   variants: {
     extend: {},
   },
