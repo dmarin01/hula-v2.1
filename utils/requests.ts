@@ -1,13 +1,14 @@
+/* eslint-disable import/no-anonymous-default-export */
 const API_KEY = process.env.API_KEY;
 
-const navBarAPI: any = {
+export default {
   fetchTrending: {
     title: "Trending",
-    url: `/trending/all/week?api_key=${API_KEY}&lenguage=es`,
+    url: `/trending/all/week?api_key=${API_KEY}&lenguage=en-US`,
   },
   fetchTopRated: {
     title: "Top Rated",
-    url: `/movie/top_rated?api_key=${API_KEY}&lenguage=es`,
+    url: `/movie/top_rated?api_key=${API_KEY}&lenguage=en-US`,
   },
   fetchActionMovies: {
     title: "Action",
@@ -46,5 +47,3 @@ const navBarAPI: any = {
     url: `/discover/movie?api_key=${API_KEY}&with_genres=10770&lenguage=es`,
   },
 };
-
-export default navBarAPI;
